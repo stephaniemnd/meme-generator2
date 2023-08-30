@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Meme Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Meme style.css" />
+</head>
+
+<body>
+  <div class="memePage">
+    <div class="memeForm">
+      <h1>Say What You Meme!</h1>
+      <h2>Fill out this form and start creating memes!</h2>
+      <span class="imageInput">
+        <label id="imageText">Image URL:</label>
+        <input type="file" id="imageFile" />
+        <input type="url" id="imageUrl" placeholder="What's the URL for your meme image?" />
+      </span>
+      <span class="allInputs">
+        <input type="text" id="topText" placeholder="(Optional) What text do you want at the top of the meme?" />
+        <label id="topLabel">Top Text:</label>
+      </span>
+      <span class="allInputs">
+        <input type="text" id="bottomText" placeholder="(Optional) What text do you want at the bottom of the meme?" />
+        <label id="btmLabel">Bottom Text:</label>
+      </span>
+      <span class="submitBtn">
+        <input type="submit" value="Generate A Meme" id="btn" />
+      </span>
+    </div>
+    <div class="meme-container">
+    </div>
+  </div>
+  <script src="Meme app.js"></script>
+</body>
+
+</html>
